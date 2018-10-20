@@ -15,7 +15,7 @@ const defaultState = {
 export const history = createHistory()
 
 //middleware forintercepting and dispatching navigation actions
-const middleware = routerMiddleware(history);
+export const middleware = routerMiddleware(history);
 
 //creating our store
 const store = createStore(rootReducer, defaultState, applyMiddleware(middleware))
